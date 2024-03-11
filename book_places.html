@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="author" content="Дзюба Марія">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        a{color: SaddleBrown; text-decoration: none}
+        a:visited{color: Chocolate;}
+        a:hover{color:SandyBrown}
+    </style>
     <title>Книгарні-вав'ярні</title>
 </head>
-<body  link="SaddleBrown" vlink="Chocolate" alink="SandyBrown" bgcolor="#EEE8E3">
-    <h1><font color="#800000" size="5" face="monospace">BookLovers<sub>♥</sub></font></h1>
-    <ul>
-        <li type="circle"><a href="index.html">Головна</a></li>
-        <li type="circle"><a href="book-catalog.html">Каталог</a></li>
-        <li type="circle"><a href="quotes.html">Цитатник</a></li>
-        <li type="circle"><a href="">Цікаві місця</a></li>
+<body>
+    <div id="header">      
+        <h1>BookLovers<sub>♥</sub></font></h1>
+    </div> 
+    <ul class="nav_bar">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="book-catalog.html">Каталог</a></li>
+        <li><a href="quotes.html">Цитатник</a></li>
+        <li><a href="book_places.html">Цікаві місця</a></li>
     </ul>
-    <h2>Атмосферні місця, щоб полюбити читати</h2>
+    <h2 class="hedlines">Атмосферні місця, щоб полюбити читати</h2>
     <p><i>Любите каву та книжки? Хочете провести час в затишній атмосфері? 
         Набридло читати вдома? Ми маємо для вас рішення. 
         Завітайте в одну з книгарень-кав'ярень Києва і отримайте незабутні враження! </i>
     </p>
-    <div>
-        <img src="https://cdn.village.com.ua/the-village.com.ua/post_image-image/T8PjW8sSQS5Nx1yTBeoVHQ.jpg" alt="" height="50%" width="50%">
+    <div class="place_info">
+        <img src="https://cdn.village.com.ua/the-village.com.ua/post_image-image/T8PjW8sSQS5Nx1yTBeoVHQ.jpg" alt="" class="place_img">
         <dl>
             <dt><b>Назва:</b></dt>
             <dd><a href="https://starylev.com.ua/">Книгарня-кав’ярня Старого Лева</a></dd>
@@ -39,8 +50,7 @@
                 Крім книг Старого Лева, у закладі представлено близько 100 книжок інших видавництв України.</dd>
         </dl>
     </div>
-    <div>
-        <img src="https://gradecoffee.com.ua/wp-content/uploads/2023/07/espresso-patronum-3.jpg" alt="" height="50%" width="50%">
+    <div class="place_info">
         <dl>
             <dt><b>Назва:</b></dt>
             <dd><a href="https://www.instagram.com/espresso_patronum_kyiv/?igshid=YmMyMTA2M2Y%3D">Espresso Patronum</a></dd>
@@ -59,10 +69,10 @@
                 Це можна зробити тут.
             </dd>
         </dl>
-        </dl>
+        <img src="https://gradecoffee.com.ua/wp-content/uploads/2023/07/espresso-patronum-3.jpg" alt="" class="place_img">
     </div>
-    <div>
-        <img src="https://api.nashkiev.ua/img-srv/image/width=860,quality=85/media-storage/05_2023/2023_05_04_6622206386bdf3f8.jpg" alt="" height="50%" width="50%">
+    <div class="place_info">
+        <img src="https://api.nashkiev.ua/img-srv/image/width=860,quality=85/media-storage/05_2023/2023_05_04_6622206386bdf3f8.jpg" alt="" class="place_img">
         <dl>
             <dt><b>Назва:</b></dt>
             <dd><a href="https://www.instagram.com/sens_kyiv/?igshid=YmMyMTA2M2Y%3D">Сенс</a></dd>
@@ -83,8 +93,7 @@
         </dl>
     </div>
 
-    <div>
-        <img src="https://postcode.com.ua/storage/organizations/3301-zakapelok-books-amp-coffee-zakapelok-books-coffee-1.jpg" alt="" height="50%" width="50%">
+    <div class="place_info">
         <dl>
             <dt><b>Назва:</b></dt>
             <dd><a href="https://www.instagram.com/zakapelok/?igshid=YmMyMTA2M2Y%3D">Zakapelok</a></dd>
@@ -101,6 +110,7 @@
                 У закладі можна випити традиційну та альтернативну каву, поласувати десертами, почитати українськомовні видання й придбати книги.
             </dd>
         </dl>
+        <img src="https://postcode.com.ua/storage/organizations/3301-zakapelok-books-amp-coffee-zakapelok-books-coffee-1.jpg" alt="" class="place_img">
     </div>
 
 </body>

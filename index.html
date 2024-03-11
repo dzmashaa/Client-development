@@ -4,61 +4,72 @@
     <meta charset="UTF-8">
     <meta name="author" content="Дзюба Марія">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        a{color: SaddleBrown; text-decoration: none}
+        a:visited{color: Chocolate;}
+        a:hover{color:SandyBrown}
+    </style>
     <title>Головна</title>
 </head>
-<body link="SaddleBrown" vlink="Chocolate" alink="SandyBrown" bgcolor="#EEE8E3">
-    <!--<div style="background: url('main_background.jpg'); background-size: cover; width: 100%; height:200px;">      
-    </div> -->
-    <h1><font color="#800000" size="5" face="monospace">BookLovers<sub>♥</sub></font></h1>
-    <ul>
-        <li type="circle"><a href="">Головна</a></li>
-        <li type="circle"><a href="book-catalog.html">Каталог</a></li>
-        <li type="circle"><a href="quotes.html">Цитатник</a></li>
-        <li type="circle"><a href="book_places.html">Цікаві місця</a></li>
+<body>
+    <div id="header">      
+        <h1>BookLovers<sub>♥</sub></h1>
+    </div>     
+    <ul class="nav_bar">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="book-catalog.html">Каталог</a></li>
+        <li><a href="quotes.html">Цитатник</a></li>
+        <li><a href="book_places.html">Цікаві місця</a></li>
     </ul>
-    <center><h2>Проєкт, який закохає вас в книжки та читання!</h1></center>
-    <p>
-        <i>
-            Поринтеь у книжковий світ! Знайди рекомендації на будь-який смак у нашому каталозі! 
+    <h2 class="hedlines">Проєкт, який закохає вас в книжки та читання!</h1>
+    <p style="font-style: italic">
+            Пориньте у книжковий світ! Знайди рекомендації на будь-який смак у нашому каталозі! 
         Ознайомся з <a href="book-catalog.html#new">книжковими новинками</a>! 
         Полюби читання разом із нами!
-        </i>
     </p>
-    <h3 align="center">Найкращі сайти для читання онлайн</h2>
-    <p><i>Спеціально для вас ми підібрали декілька нвйкращих, на нашу думку, сайтів, де можна безкоштовно завантажити чи прочитати онлайн улюблені книги українською. </i></p>
-    <table title="Найкращі сайти для читання онлайн" cellpadding="10" width="800" align="center"> <caption> Найкращі сайти </caption>
-        <tr bgcolor="burlywood"><th>Лого</th>
-            <th>Назва</th>
-            <th>Опис</th>
-        </tr>
-        <tr bgcolor="ivory">
-            <td align="center"><img src="ukrlib_logo.png" alt="УкрЛіб лого" height="50"></td>
-            <td align="center"><a href="https://www.ukrlib.com.ua/">УкрЛіб</a></td>
-            <td>УкрЛіб — скорочення від Ukrainian Library (українська бібліотека). Метою створення цього сайту було зробити українську літературу доступною для всіх, хто бажає її читати.</td>
-        </tr>
-        <tr bgcolor="burlywood">
-            <td align="center"><img src="javalibre_logo.png" alt="JavaLibre лого" height="50"></td>
-            <td align="center"><a href="https://chtyvo.org.ua/">JavaLibre</a></td>
-            <td>Тут можна безкоштовно завантажити обрану книгу у кількох форматах – jar, jad, txt, fb2, epub, doc. Можна знайти твори і сучасних авторів, і класиків.</td>
-        </tr>
-        <tr bgcolor="ivory">
-            <td align="center"><img src="chtyvo_logo.png" alt="Чтиво лого" height="50"></td>
-            <td align="center"><a href="https://chtyvo.org.ua/">Чтиво</a></td>
-            <td>Вільна онлайн-бібліотека україномовної літератури. Тут можна знайти багато цікавих текстів та завантажити їх у зручному форматі (*.fb2, *.epub, *.txt, *.htm, *.rtf, *.doc, *.pdf та *.djvu).</td>
-        </tr>
+    <h3 class="hedlines">Найкращі сайти для читання онлайн</h2>
+    <p style="font-style: italic">Спеціально для вас ми підібрали декілька нaйкращих, на нашу думку, сайтів, де можна безкоштовно завантажити чи прочитати онлайн улюблені книги українською.</p>
+    <table id='best_sites'title="Найкращі сайти для читання онлайн" cellpadding="10" width="800"> <caption> Найкращі сайти </caption>
+        <thead>
+            <tr><th>Лого</th>
+                <th>Назва</th>
+                <th>Опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center"><img src="images/ukrlib_logo.png" alt="УкрЛіб лого" height="50"></td>
+                <td class="center"><a href="https://www.ukrlib.com.ua/">УкрЛіб</a></td>
+                <td>УкрЛіб — скорочення від Ukrainian Library (українська бібліотека). Метою створення цього сайту було зробити українську літературу доступною для всіх, хто бажає її читати.</td>
+            </tr>
+            <tr class="dark_theme">
+                <td class="center"><img src="images/javalibre_logo.png" alt="JavaLibre лого" height="50"></td>
+                <td class="center"><a href="https://chtyvo.org.ua/">JavaLibre</a></td>
+                <td>Тут можна безкоштовно завантажити обрану книгу у кількох форматах – jar, jad, txt, fb2, epub, doc. Можна знайти твори і сучасних авторів, і класиків.</td>
+            </tr>
+            <tr>
+                <td class="center"><img src="images/chtyvo_logo.png" alt="Чтиво лого" height="50"></td>
+                <td class="center"><a href="https://chtyvo.org.ua/">Чтиво</a></td>
+                <td>Вільна онлайн-бібліотека україномовної літератури. Тут можна знайти багато цікавих текстів та завантажити їх у зручному форматі (*.fb2, *.epub, *.txt, *.htm, *.rtf, *.doc, *.pdf та *.djvu).</td>
+            </tr>
+        </tbody>
     </table>
-    <h3 align="center">Любите поезію?</h3>
-    <p>
-        <i>Ми підібрали для вас підбірку сайтів де ви можете читати вірші українських та зарубіжних поетів українською мовою та публікувати свої поезії</i>
+    <h3 class="hedlines"></h3>
+    <p style="font-style: italic">
+        Ми підібрали для вас підбірку сайтів де ви можете читати вірші українських та зарубіжних поетів українською мовою та публікувати свої поезії
     </p>
     <div>
-        <p>
+        <p id="iframe_links">
             <a href="https://warpoetry.mkip.gov.ua/" target="PoetryFrame">Поезія Вільних</a>    
             <a href="https://virshi.top/" target="PoetryFrame"> Virshi Top</a>
             <a href="https://virshi.com.ua/" target="PoetryFrame"> ВІРШІ</a>
         </p>
     </div>
-        <iframe  name="PoetryFrame" src="https://warpoetry.mkip.gov.ua/" frameborder="0" scrolling="yes" align="center" width="50%" height="500"></iframe>
+        <iframe  id="if" name="PoetryFrame" src="https://warpoetry.mkip.gov.ua/" frameborder="0" scrolling="yes" width="50%" height="500"></iframe>
     </div>
 </body>
 </html>

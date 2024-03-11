@@ -5,29 +5,40 @@
     <meta charset="UTF-8">
     <meta name="author" content="Дзюба Марія">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        a{color: SaddleBrown; text-decoration: none}
+        a:visited{color: Chocolate;}
+        a:hover{color:SandyBrown}
+    </style>
     <title>Каталог</title>
 </head>
-<body  link="SaddleBrown" vlink="Chocolate" alink="SandyBrown" bgcolor="#EEE8E3">
-    <h1><font color="#800000" size="5" face="monospace">BookLovers<sub>♥</sub></font></h1>
-    <ul>
-        <li type="circle"><a href="index.html">Головна</a></li>
-        <li type="circle"><a href="">Каталог</a></li>
-        <li type="circle"><a href="quotes.html">Цитатник</a></li>
-        <li type="circle"><a href="book_places.html">Цікаві місця</a></li>
+<body>
+    <div id="header">      
+        <h1>BookLovers<sub>♥</sub></font></h1>
+    </div> 
+    <ul class="nav_bar">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="book-catalog.html">Каталог</a></li>
+        <li><a href="quotes.html">Цитатник</a></li>
+        <li><a href="book_places.html">Цікаві місця</a></li>
     </ul>
-    <h2>Книжковий каталог</h2>
-    <h3>Категорії:</h3>
-    <ol>
-        <li type="a"><a href="#popular">Популярне</a></li>
-        <li type="a"><a href="#new">Новинки</a></li>
-        <li type="a"><a href="#clasic">Класика</a></li>
-        <li type="a"><a href="#horror">Жахи</a></li>
-        <li type="a"><a href="#fantasy">Фентезі</a></li>
-        <li type="a"><a href="#detectives">Детективи</a></li>
-        <li type="a"><a href="#romance">Романтика</a></li>
+    <h2 class="hedlines">Книжковий каталог</h2>
+    <h4 class="hedlines">Категорії:</h3>
+    <ol id="category_list">
+        <li><a href="#popular">Популярне</a></li>
+        <li><a href="#new">Новинки</a></li>
+        <li><a href="#clasic">Класика</a></li>
+        <li><a href="#horror">Жахи</a></li>
+        <li><a href="#fantasy">Фентезі</a></li>
+        <li><a href="#detectives">Детективи</a></li>
+        <li><a href="#romance">Романтика</a></li>
     </ol>
     <p>Обери книгу на будь-який смак!</p>
-    <h2 id="popular">Популярне</h2>
+    <h2 id="popular" class="hedlines">Популярне</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/924/230_355_1/de3b8db3_c9ae_11ed_8182_00505684ea69_264a58a8_01ed_11ee_8184_00505684ea69.jpg" alt="Обкладинка книги Переможці" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/cce/230_355_1/763abd03_18b1_11ed_8173_0050568ef5e6_e1dc4ce1_c6f1_11ed_8182_00505684ea69.jpg" alt="Обкладинка книги Танці з кістками" height="250">
@@ -40,7 +51,7 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/ca0/230_355_1/69068dfc_f9ab_11e6_80c5_000c29ae1566_99f391f8_af32_11eb_814a_0050568ef5e6.jpg" alt="Обкладинка книги Мистецтво війни" height="250">
         
     </div>
-    <h2 id="new">Новинки</h2>
+    <h2 id="new" class="hedlines">Новинки</h2>
     <div>
         <img src="https://bookclub.ua/images/db/goods/61167_121268.jpg" alt="Обкладинка книги Панк 57" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/544/230_355_1/3014edee_9b5c_11ee_818f_00505684ea69_ecc2cd7f_9b5c_11ee_818f_00505684ea69.jpg" alt="Обкладинка книги Переможці" height="250">
@@ -53,7 +64,7 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/bf8/230_355_1/4081e864_71a4_11ee_818c_00505684ea69_44d7a15b_7236_11ee_818c_00505684ea69.jpg" alt="Обкладинка книги Останній потяг до Лондона" height="250">
         
     </div>
-    <h2 id="clasic">Класика</h2>
+    <h2 id="clasic" class="hedlines">Класика</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/702/230_355_1/cfa051db_74e0_11e6_80be_000c29ae1566_3727b395_a703_11ed_817c_0050568ef5e6.jpg" alt="Обкладинка книги 1984" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/462/230_355_1/115d251e_a23c_11ed_817a_0050568ef5e6_6b9565d0_a23d_11ed_817a_0050568ef5e6.jpg" alt="Обкладинка книги Портрет Джейн Ейр" height="250">
@@ -65,7 +76,7 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/9c1/230_355_1/ca6f7ee6_3c3e_11ee_8187_00505684ea69_3fdc50fb_6766_11ee_8189_00505684ea69.jpg" alt="Обкладинка книги Невеличка драма" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/893/230_355_1/83bcc485_c7d5_11ed_8182_00505684ea69_3aabbc17_d459_11ed_8182_00505684ea69.jpg" alt="Обкладинка книги Тіни забутих предків" height="250">        
     </div>
-    <h2 id="horror">Жахи, трилери</h2>
+    <h2 id="horror" class="hedlines">Жахи, трилери</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/1f3/230_355_1/21c1b22b_e70b_11e7_80da_000c29ae1566_666bcd86_d22f_11ed_8182_00505684ea69.jpg" alt="Обкладинка книги Зелена миля" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/042/230_355_1/aa4cea0d_393d_11e7_80c5_000c29ae1566_b983a092_0db3_11ed_8173_0050568ef5e6.jpg" alt="Обкладинка книги ПАсистент. Книга 2" height="250">
@@ -77,7 +88,7 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/99e/230_355_1/3569da82_a985_11eb_814a_0050568ef5e6_435f0d1f_e59b_11ec_8170_0050568ef5e6.jpg" alt="Обкладинка книги Розум убивці" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/c03/230_355_1/7998f99a_f0c8_11ed_8183_00505684ea69_b62ba43f_f0c9_11ed_8183_00505684ea69.jpg" alt="Жага. Книга 1" height="250">
     </div>
-    <h2 id="fantasy">Фентезі</h2>
+    <h2 id="fantasy" class="hedlines">Фентезі</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/fe1/230_355_1/7dcde957_819f_11e6_80c0_000c29ae1566_fbd9d961_4f88_11ed_8175_0050568ef5e6.jpg" alt="Обкладинка книги Зелена миля" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/b8b/230_355_1/16784614_ff2b_11e6_80c5_000c29ae1566_dd028962_b25b_11eb_814a_0050568ef5e6.jpg" alt="Обкладинка книги ПАсистент. Книга 2" height="250">
@@ -89,7 +100,7 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/412/230_355_1/61f3737b_3c36_11ee_8187_00505684ea69_e7a789a0_3c37_11ee_8187_00505684ea69.jpg" alt="Обкладинка книги Розум убивці" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/ccc/230_355_1/62f34639_098f_11ed_8173_0050568ef5e6_afb6d49c_55fc_11ed_8175_0050568ef5e6.jpg" alt="Жага. Книга 1" height="250">
     </div>
-    <h2 id="detectives">Детективи</h2>
+    <h2 id="detectives" class="hedlines">Детективи</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/198/230_355_1/dcc482c8_529a_11e8_80f5_000c29ae1566_4d4d1392_529b_11e8_80f5_000c29ae1566.png" alt="Обкладинка книги Зелена миля" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/ff5/230_355_1/7955f380_6e14_11ec_815f_0050568ef5e6_865471aa_cf92_11ec_816f_0050568ef5e6.jpg" alt="Обкладинка книги ПАсистент. Книга 2" height="250">
@@ -99,15 +110,14 @@
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/6a3/230_355_1/82292b17_571f_11eb_8146_000c29ae1566_a57eb798_5722_11eb_8146_000c29ae1566.jpg" alt="Обкладинка книги Сяйво" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/dfc/230_355_1/8a813235_216f_11ee_8187_00505684ea69_2d9dde9f_2171_11ee_8187_00505684ea69.jpg" alt="Обкладинка книги Лавкрафт" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/b54/230_355_1/8f2f741e_0bd3_11ec_8150_0050568ef5e6_80b97169_0bd4_11ec_8150_0050568ef5e6.jpg" alt="Обкладинка книги Розум убивці" height="250">
-        <img src="https://book-ye.com.ua/upload/resize_cache/iblock/488/230_355_1/5356cb73_3201_11ee_8187_00505684ea69_d0a4a8b6_3204_11ee_8187_00505684ea69.jpg" alt="Жага. Книга 1" height="250">
     </div>
-    <h2 id="romance">Романтика</h2>
+    <h2 id="romance" class="hedlines">Романтика</h2>
     <div>
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/d54/230_355_1/719a4ba5_0cde_11ed_8173_0050568ef5e6_f198770d_0cdf_11ed_8173_0050568ef5e6.jpg" alt="Обкладинка книги Тисяча пам'ятних поцілунків" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/117/230_355_1/5d70e353_ee93_11ea_813d_000c29ae1566_10dc5082_ee94_11ea_813d_000c29ae1566.jpg" alt="Обкладинка книги Квартира на двох" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/25d/230_355_1/0ed96289_8a86_11ec_8169_0050568ef5e6_701027fa_c408_11ed_8186_0050568ef5e6.jpg" alt="Обкладинка книги 9 листопада Коллін Гувер" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/ca7/230_355_1/2c865e4c_c46a_11eb_814a_0050568ef5e6_4d4831a5_c46b_11eb_814a_0050568ef5e6.jpg" alt="Обкладинка книги Випадкові наречені" height="250">
-        <img src="https://book-ye.com.ua/upload/resize_cache/iblock/635/230_355_1/af75c9ca_e708_11e7_80da_000c29ae1566_12035b64_e709_11e7_80da_000c29ae1566.png" alt="Обкладинка книгиЗакохані в книжки не сплять на само" height="250">
+        <img src="https://book-ye.com.ua/upload/resize_cache/iblock/635/230_355_1/af75c9ca_e708_11e7_80da_000c29ae1566_12035b64_e709_11e7_80da_000c29ae1566.png" alt="Обкладинка книги Закохані в книжки не сплять на само" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/945/230_355_1/6a1a43f1_9c5e_11eb_814a_0050568ef5e6_82406f11_850c_11ec_8166_0050568ef5e6.jpg" alt="Обкладинка книги Бунгало" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/ac5/230_355_1/b6196f43_1aca_11e7_80c5_000c29ae1566_47a7b017_99c9_11ee_818f_00505684ea69.jpg" alt="Обкладинка книги Ті, що співають у терні" height="250">
         <img src="https://book-ye.com.ua/upload/resize_cache/iblock/bbf/230_355_1/8d7a70db_84c1_11e6_80c0_000c29ae1566_98438b66_bf97_11eb_814a_0050568ef5e6.jpg" alt="Обкладинка книги До зустрічі з тобою." height="250">
