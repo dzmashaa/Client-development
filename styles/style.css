@@ -1,0 +1,128 @@
+body{
+    background-color: #EEE8E3;
+    font-family: "Roboto Mono", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: #800000;
+    font-size: 2rem;
+    font-family: monospace;
+    margin-top: 0;
+    padding: 10px 15px ;
+}
+
+#header {
+    background-image: url("../images/main_background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+.nav_bar{
+    list-style-type: circle;
+    background-color: ivory;
+    color: chocolate;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+}
+
+
+.hedlines{
+    text-align: center;
+    color: #800000;
+}
+
+p{
+    margin: 10px;
+}
+table{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#quotes_table{
+    font-family: Garamond;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 70%;
+}
+
+.quote_info{
+    text-align: end;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+.like_info{
+    text-align: end;
+}
+
+#category_list{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    list-style-type: lower-alpha;
+    color: SaddleBrown;
+    margin: 0 auto;
+}
+
+h4{
+    text-align: left!important;
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+dl{
+    margin: 20px;
+}
+dl dt{
+    color: #800000;
+    line-height: 2;
+}
+
+thead{
+    background-color: burlywood;
+}
+
+#best_sites tbody{
+    background-color: ivory;
+    align-content: center;
+}
+.dark_theme{
+    background-color: burlywood;
+}
+
+.center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#iframe_links{
+    font-size: 1.2rem;
+    font-style:oblique;
+    text-align: center;
+}
+
+#if{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: 500px;
+}
+
+.place_info{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.place_img{
+    height: 40%;
+    width:40%;
+}
