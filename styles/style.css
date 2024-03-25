@@ -14,7 +14,7 @@ h1 a{
     margin-top: 0;
     padding: 10px 15px ;
 }
-a{
+a:link{
     color: SaddleBrown; 
     text-decoration: none;
 }
@@ -23,6 +23,9 @@ a:visited{
 }
 a:hover{
     color:SandyBrown
+}
+a:active{
+    font-size: larger;
 }
 #header {
     background-image:  linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),url("../images/main_background.jpg");
@@ -56,26 +59,34 @@ a:hover{
     background-color: ivory;
     border-radius: 7px;
 }
+.nav_bar a:active{
+    text-decoration: none;
+}
 
 .hedlines{
     text-align: center;
     color: #800000;
+    margin: 20px 5px;
 }
 
 p{
     margin: 10px;
+    font-style: italic;
 }
 table{
     margin: 0 auto;
     width: 50%;
 }
-
+span{
+    color:chocolate;
+    font-weight: bold;
+}
 #quotes_table{
     font-family: Garamond;
     font-weight: 200;
     font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 500;
     width: 70%;
 }
 
@@ -83,21 +94,14 @@ table{
     text-align: end;
     font-style: italic;
     font-weight: normal;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: smaller;
 }
-
 
 .like_info{
     text-align: end;
 }
 
-#category_list{
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 1.7;
-    list-style-type: lower-alpha;
-    color: SaddleBrown;
-    margin: 0 auto;
-}
 
 h4{
     text-align: left!important;
@@ -122,10 +126,12 @@ thead{
 }
 .dark_theme{
     background-color: burlywood;
-
+    padding: 10px;
+    margin: 0;
 }
 .dark_theme a{
     color: rgb(79, 20, 20);
+    padding: 5px;
 }
 .dark_theme a:hover{
     background-color: ivory;
@@ -136,18 +142,6 @@ thead{
     vertical-align: middle;
 }
 
-#iframe_links{
-    font-size: 1.2rem;
-    font-style:oblique;
-    text-align: center;
-}
-
-#if{
-    margin: 0 auto;
-    display: block;
-    width: 50%;
-    height: 500px;
-}
 
 .place_info{
     margin: 10px 0;
@@ -159,11 +153,15 @@ thead{
     height: 40%;
     width:40%;
 }
-
-.book_aestetic_img li {
-    list-style: circle;
-    margin-top: 10px;
+.book_aestetic{
+    text-align: center;
+    padding: 10px;
 }
+.book_aestetic_img li{
+    list-style: circle;
+    margin-bottom: 20px;
+}
+
 .book_aestetic_img{
     display: flex;
     justify-content: space-around;
@@ -177,23 +175,70 @@ thead{
     border-radius: 60%;
 }
 
-/* #music_logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-} */
+#headphones_img{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    bottom: 80px;
+    padding: 0px;
+}
 
+#music_logo{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 150px;
+    left:300px;
+    z-index: 1;
+}
+
+
+/* BOOK CATEGORY PAGE */
+#categories{
+    margin: 0 20px;
+    position: fixed;
+
+}
+#category_list{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    list-style-type: none;
+    color: ivory;
+    margin: 0 auto;
+    padding: 0;
+}
+#category_list li{
+    text-align: center;
+    background-color: rgb(171, 81, 17);
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+#category_list li a{
+    color: ivory;
+}
+#category_list li:hover{
+    background-color: chocolate;
+}
 .catalog_page{
-    display: flex;
+    margin-left: 200px;
 }
 .catalog_page img{
     height: 300px;
     padding: 20px;
 }
-
+.book_set{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
 img + p{
     font-style: italic;
     color: #6f0000;
     align-items: center;
+    width: 200px;
+    text-align: center;
 }
+
