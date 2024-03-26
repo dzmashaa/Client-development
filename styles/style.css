@@ -27,6 +27,9 @@ a:hover{
 a:active{
     font-size: larger;
 }
+dt:first-child, dd a:first-child{
+    font-size: larger;
+}
 #header {
     background-image:  linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),url("../images/main_background.jpg");
     background-size: cover;
@@ -81,27 +84,6 @@ span{
     color:chocolate;
     font-weight: bold;
 }
-#quotes_table{
-    font-family: Garamond;
-    font-weight: 200;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 500;
-    width: 70%;
-}
-
-.quote_info{
-    text-align: end;
-    font-style: italic;
-    font-weight: normal;
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-size: smaller;
-}
-
-.like_info{
-    text-align: end;
-}
-
 
 h4{
     text-align: left!important;
@@ -120,10 +102,13 @@ thead{
     background-color: burlywood;
 }
 
-#best_sites tbody{
-    background-color: ivory;
-    align-content: center;
+
+.center{
+    text-align: center;
+    vertical-align: middle;
 }
+
+/* MAIN PAGE */
 .dark_theme{
     background-color: burlywood;
     padding: 10px;
@@ -137,22 +122,7 @@ thead{
     background-color: ivory;
     border-radius: 7px;
 }
-.center{
-    text-align: center;
-    vertical-align: middle;
-}
 
-
-.place_info{
-    margin: 10px 0;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-.place_img{
-    height: 40%;
-    width:40%;
-}
 .book_aestetic{
     text-align: center;
     padding: 10px;
@@ -192,6 +162,21 @@ thead{
     z-index: 1;
 }
 
+.poetry_img{
+    padding: 20px 10px;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 60%;
+}
+.float-left{
+    float: left;
+    margin-left: 100px;
+}
+.float-right{
+    float: right;
+    margin-right: 100px;
+}
 
 /* BOOK CATEGORY PAGE */
 #categories{
@@ -240,5 +225,66 @@ img + p{
     align-items: center;
     width: 200px;
     text-align: center;
+}
+
+/* PLACES PAGE */
+.place_info{
+    margin: 10px 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.place_img{
+    height: 40%;
+    width:40%;
+}
+/* QUOTE PAGE */
+#quotes_header{
+    margin: 0 auto;
+    max-width: 290px;
+    position: relative;
+    padding: 5px 24px;
+    background-color: #fbf4ea;
+    color: #800000;
+    border-radius: 4px;
+}
+#quotes_header::before {
+    content: '\201e';
+    position: absolute;
+    top: -16px;
+    left: 6px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+  }
+#quotes_header::after {
+    content: '\201c';
+    position: absolute;
+    right: 3px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+}
+#quotes_table{
+    font-family: Garamond;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 70%;
+}
+
+.quote_info{
+    text-align: end;
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: smaller;
+}
+
+.like_info{
+    text-align: end;
 }
 
