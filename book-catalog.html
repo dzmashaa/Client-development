@@ -268,5 +268,12 @@
             </div> 
         </div>
     </div>
+    <script>
+        let changeColor = confirm('Змінити колір фону на 30с?')
+        if(changeColor){
+            document.body.style.background = '#FEBC68';
+            setTimeout(() => document.body.style.background = '', 30000)
+        }
+    </script>
 </body>
 </html>

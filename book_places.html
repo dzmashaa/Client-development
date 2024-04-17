@@ -12,6 +12,26 @@
     <title>Книгарні-вав'ярні</title>
 </head>
 <body>
+    <script>
+        let rating = prompt('Оцініть наш сайт від 1 до 5', 5);
+        switch(rating){
+            case '1':
+            case '2':
+                alert(':(')
+                break;
+            case '3':
+            case '4':
+                alert('Дякую за оцінку! Спробую допрацювати недоліки :)');
+                break;
+            case '5':
+                alert('Дякую за оцінку! Рада, що вам сподобалось :)');
+                break;
+            case null:
+                break;
+            default:
+                alert('Введено некоректне значення :(')
+        }   
+    </script>
     <div id="header">      
         <h1><a href="index.html">BookLovers<sub>♥</sub></a></h1>
         <ul class="nav_bar">
