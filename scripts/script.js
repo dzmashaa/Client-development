@@ -1,4 +1,4 @@
-/* function dialogueWithUser(){
+function dialogueWithUser(){
     let wantTalk = confirm('Привіт! Хочеш трохи поспілкуватися?')
     while(wantTalk)
     {
@@ -48,7 +48,7 @@ function compareStrings(str1, str2)
     }
 }
 
-compareStrings('Привіт', 'Привітик') */
+compareStrings('Привіт', 'Привітик')
 
 
 window.onload = function(){
