@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/script.js"></script> -->
     <title>Головна</title>
 </head>
 <body>
@@ -86,6 +86,57 @@
                         <p><a href="https://apps.apple.com/us/app/%D0%B0%D1%80%D0%BA%D1%83%D1%88%D1%96-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B5%D0%B7%D1%96%D1%8F/id1500310604">Застосунок Аркуші</a>
                            - віртуальна бібліотека з віршами відомих та маловідомих українських поетів</p>    
                 </div>
+            <div class="dark_theme" id="events">
+                <h2 class="hedlines">Кнопки і події</h2>
+                <input class="btn" type="button" value="Змінити колір кнопки" onclick="changeBtnColor(this)">
+                <input class="btn" id="increase_btn" type="button" value="Збільшити кнопкy">
+                <script>
+                    let increase_btn = document.getElementById("increase_btn");
+                    increase_btn.onmouseover = function(){
+                        increase_btn.style.height = '100px';
+                        increase_btn.style.fontSize = '1.2rem';
+                    }
+                    increase_btn.onmouseout = function(){
+                        increase_btn.style.height = '50px';
+                        increase_btn.style.fontSize = '1rem';
+                    }
+                </script>
+                <input class="btn" id="two_events_btn" type="button" value="Натисни на мене!">
+                <input class="btn" id="new-btn" type="button" value="Нова кнопка">
+            </div>
+            <div>
+                <h2 class="hedlines">Поради, як почати читати книги</h2>
+                <ol id="tips-list">
+                    <li>Знайдіть книгу яка вас зацікавила.</li>
+                    <li>
+                        Розпитайте своїх друзів і родину про їхні улюблені книги.
+                    </li>
+                    <li>                
+                        Прочитайте книгу про свій улюблений фільм.
+                    </li>
+                    <li>
+                        Знайдіть зручніше місце для читання.
+                    </li>
+                    <li>
+                        Розслабтеся, створіть атмосферу за допомогою чашечки кави, свічок або приємної музики
+                    </li>
+                    <li>
+                        Зробіть читання приємним, якщо книга вам незрозуміла чи нецікава, не дочитуйте її.
+                    </li>
+                    <li>
+                        Плануйте час для читання, виділіть спочатку 10 хвилин день, цього буде достатньо щоб просто почати.
+                    </li>
+                </ol>
+                <button class="btn" id="hide-btn" data-hidden-id="tips-list">Сховати список</button>
+            </div>
+            <div class="dark_theme">
+                <div id="menu">
+                    <button class="btn" data-act="info">Інформація про розробника</button>
+                    <button class="btn" data-act="sources">Посилання на джерела</button>
+                    <button class="btn" data-act="contact">Контакти</button>
+                </div>
+            </div>
+            <script src="scripts/events.js"></script>
     </main>
 </body>
 </html>
