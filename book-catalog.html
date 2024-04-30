@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/mouse_events.js"></script>
     <title>Каталог</title>
 </head>
 <body>
@@ -38,29 +39,12 @@
         <div class="catalog_page">
             <h2 class="hedlines">Книжковий каталог</h2>
             <p>Обери книгу на будь-який смак!</p>
+            <div>
+                <h2 class="hedlines">Постав книги на полицю</h2>
+                <img id="book-shelf" src="images/Bookshelf-PNG-Image.png" alt="" height="200px">
+                <img id="book-for-shelf" src="images/pngwing.com.png" alt="" height="30px">
+            </div>
             <h2 id="popular" class="hedlines">Популярне</h2>
-            <div class="book_set">
-                <div class="book_item">
-                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/924/230_355_1/de3b8db3_c9ae_11ed_8182_00505684ea69_264a58a8_01ed_11ee_8184_00505684ea69.jpg" alt="Обкладинка книги Переможці">
-                    <p>"Переможці" <br>Фредрік Бакман</p>
-                </div>
-                <div class="book_item">
-                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/cce/230_355_1/763abd03_18b1_11ed_8173_0050568ef5e6_e1dc4ce1_c6f1_11ed_8182_00505684ea69.jpg" alt="Обкладинка книги Танці з кістками">
-                    <p>"Танці з кістками" <br> Андрій Сем'янків</p>
-                </div>
-                <div class="book_item">
-                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/b0f/230_355_1/31cd1c25_1fec_11ee_8187_00505684ea69_66b265e7_3dcb_11ee_8187_00505684ea69.jpg" alt="Обкладинка книги По той бік чарівної палички.">
-                    <p>"По той бік чарівної палички" <br>Том Фелтон</p>
-                </div>
-                <div class="book_item">
-                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/5be/230_355_1/64bf980e_c8d1_11ed_8182_00505684ea69_9c1ecc39_ea44_11ed_8183_00505684ea69.jpg" alt="Обкладинка книги За Перекопом є земля">
-                    <p>"За Перекопом є земля" <br>Анастасія Левкова</p>
-                </div>
-                <div class="book_item">
-                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/7c5/230_355_1/07078e6c_1538_11eb_813d_000c29ae1566_9081383a_1539_11eb_813d_000c29ae1566.jpg" alt="Обкладинка книги Стіни в моїй голові.">
-                    <p>"Стіни в моїй голові" <br>Володимир Станчишин</p>
-                </div>
-            </div>    
             <div class="book_set">
                 <div class="book_item">
                     <img src="https://book-ye.com.ua/upload/resize_cache/iblock/3e4/230_355_1/7e0834e8_832d_11e7_80cf_000c29ae1566_d7e1ebf8_1333_11ed_8173_0050568ef5e6.jpg" alt="Обкладинка книги Інтернат">
@@ -82,7 +66,29 @@
                     <img src="https://book-ye.com.ua/upload/iblock/855/448a1688_3d0d_11ee_8187_00505684ea69_2e81b9de_3d0e_11ee_8187_00505684ea69.jpg" alt="Обкладинка книги Червоний, білий та королівський синій">
                     <p>"Червоний, білий та королівський синій" <br>Кейсі Макквістон</p>
                 </div>
-            </div>    
+            </div>
+            <div class="book_set">
+                <div class="book_item">
+                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/924/230_355_1/de3b8db3_c9ae_11ed_8182_00505684ea69_264a58a8_01ed_11ee_8184_00505684ea69.jpg" alt="Обкладинка книги Переможці">
+                    <p>"Переможці" <br>Фредрік Бакман</p>
+                </div>
+                <div class="book_item">
+                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/cce/230_355_1/763abd03_18b1_11ed_8173_0050568ef5e6_e1dc4ce1_c6f1_11ed_8182_00505684ea69.jpg" alt="Обкладинка книги Танці з кістками">
+                    <p>"Танці з кістками" <br> Андрій Сем'янків</p>
+                </div>
+                <div class="book_item">
+                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/b0f/230_355_1/31cd1c25_1fec_11ee_8187_00505684ea69_66b265e7_3dcb_11ee_8187_00505684ea69.jpg" alt="Обкладинка книги По той бік чарівної палички.">
+                    <p>"По той бік чарівної палички" <br>Том Фелтон</p>
+                </div>
+                <div class="book_item">
+                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/5be/230_355_1/64bf980e_c8d1_11ed_8182_00505684ea69_9c1ecc39_ea44_11ed_8183_00505684ea69.jpg" alt="Обкладинка книги За Перекопом є земля">
+                    <p>"За Перекопом є земля" <br>Анастасія Левкова</p>
+                </div>
+                <div class="book_item">
+                    <img src="https://book-ye.com.ua/upload/resize_cache/iblock/7c5/230_355_1/07078e6c_1538_11eb_813d_000c29ae1566_9081383a_1539_11eb_813d_000c29ae1566.jpg" alt="Обкладинка книги Стіни в моїй голові.">
+                    <p>"Стіни в моїй голові" <br>Володимир Станчишин</p>
+                </div>
+            </div>        
             <h2 id="new" class="hedlines dark_theme">Новинки</h2>
             <div class="book_set dark_theme">
                 <div class="book_item">
