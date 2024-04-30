@@ -208,6 +208,12 @@ thead{
     border-radius: 10px;
 }
 /* BOOK CATEGORY PAGE */
+#book-for-shelf{
+    height: 100px;
+}
+#book-shelf{
+    height: 200px;
+}
 #categories{
     margin: 0 20px;
     position: fixed;
@@ -244,7 +250,7 @@ thead{
     padding: 20px;
 }
 .book_set{
-    padding: 0;
+    padding:0 ;
     display: flex;
     justify-content: space-between;
 }
